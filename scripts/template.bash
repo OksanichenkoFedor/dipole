@@ -7,4 +7,5 @@ av_node=$(srun -N 1 -p RT hostname | tail -n 1)
 #SBATCH --nodelist=$av_node
 #SBATCH --comment="commnet for example"
 echo "One run, using: $av_node "
-srun ~/bin/lmp_mpi -in ~/project_dipole/dipole/in.runnumber > ~/project_dipole/dipole/log.lammps_number
+srun ~/bin/lmp_mpi -in ~/project_dipole/dipole/in.run2_number > ~/project_dipole/dipole/log.lammps_number
+#python ~/project_dipole/scripts/scriptnumber.py

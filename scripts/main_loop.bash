@@ -28,6 +28,7 @@ do
 	curl -s -X POST https://api.telegram.org/bot$token/sendPhoto -F chat_id=$chat_id -F photo="@/home/common/studtscm03/project_dipole/pictures/pic$rnumber.png" -F caption="Number of atoms: $rnumber" &&	
 	rm gplot$rnumber.gnuplot &&
 	rm script$rnumber.py &&
+	cp forgnu$rnumber.txt  ~/project_dipole/dumps/
 	rm forgnu$rnumber.txt 
 done
 
